@@ -23,6 +23,9 @@ jobs:
       - name: Maven Compile
         run: mvn -X compile -B --file pom.xml
 
+      - name: Check Line of Code
+        run: find src/test/java -name "*.java" | xargs wc -l
+
       - name: Run Unit Tests
         run: mvn test -B --file pom.xml
 
