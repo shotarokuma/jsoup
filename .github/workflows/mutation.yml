@@ -24,7 +24,7 @@ jobs:
         run: mvn -X compile -B --file pom.xml
 
       - name: Run Pitest
-        run: mvn test org.pitest:pitest-maven:mutationCoverage
+        run: mvn test org.pitest:pitest-maven:mutationCoverage  -Dpitest.timeout=600000
 
       - name: Upload Pitest Report
         uses: actions/upload-artifact@v4 
