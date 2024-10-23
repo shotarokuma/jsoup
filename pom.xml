@@ -51,10 +51,10 @@
               </dependencies>
                 <configuration>
                 <targetClasses>
-                    <param> org.jsoup.parser.*</param>
+                    <param> org.jsoup.*</param>
                 </targetClasses>
                 <targetTests>
-                    <param> org.jsoup.parser.*Test</param>
+                    <param> org.jsoup.*Test</param>
                 </targetTests>
             </configuration>
       </plugin>
