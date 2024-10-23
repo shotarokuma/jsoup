@@ -41,7 +41,7 @@
         <plugin>
           <groupId>org.pitest</groupId>
            <artifactId>pitest-maven</artifactId>
-          <version>1.5.2</version>
+          <version>1.17.0</version>
                 <!-- if you want to specify target classes, add following code.
                     <configuration>
                         <targetClasses>

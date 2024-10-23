@@ -23,12 +23,6 @@ jobs:
       - name: Maven Compile
         run: mvn -X compile -B --file pom.xml
 
-      - name: Maven Verify
-        run: mvn -X verify -B --file pom.xml
-
-      - name: Maven Verify
-        run: mvn -X verify -B --file pom.xml
-
       - name: Run Pitest
         run: mvn org.pitest:pitest-maven:mutationCoverage
 
