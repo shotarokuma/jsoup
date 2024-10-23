@@ -49,16 +49,14 @@
                  <version>1.2.1</version>
                 </dependency>
               </dependencies>
-                <!-- if you want to specify target classes, add following code.
-                    <configuration>
-                        <targetClasses>
-                            <param>com.your.package.root.want.to.mutate*</param>
-                        </targetClasses>
-                        <targetTests>
-                            <param>com.your.package.root*</param>
-                        </targetTests>
-                    </configuration>
-                -->
+                <configuration>
+                <targetClasses>
+                    <param> org.jsoup.parser.*</param>
+                </targetClasses>
+                <targetTests>
+                    <param> org.jsoup.parser.*Test</param>
+                </targetTests>
+            </configuration>
       </plugin>
       <!-- Compile -->
       <plugin>
